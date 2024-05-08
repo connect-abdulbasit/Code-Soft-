@@ -1,0 +1,121 @@
+ *{
+    scroll-behavior: smooth;
+ }
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Add position: fixed to make the navigation bar stay fixed at the top */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Styling for anchor links */
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px; /* Add padding for better clickability */
+}
+
+/* Style the active link */
+header nav ul li a.active {
+    background-color: #555;
+}
+
+/* Smooth scrolling animation for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+.leftHeader{
+    width: 50%;
+    font-size: 23px;
+}
+.list{
+    display: flex;
+    align-items: center;
+ justify-content: center;
+}
+
+.list li {
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+
+}
+.list li a{
+    text-decoration: none;
+    color: #fff;
+}
+header h1 {
+    margin: 0;
+}
+
+#About {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 50%;
+}
+.right img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 1.5s;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#skills, #Projects, #Resume, #Contact {
+    padding: 20px;
+}
+.proj{
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.projectNum{
+display: flex;
+}
+.leftProj{
+    width: 50%;
+}
+.rightProj{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightProj img{
+    width: 40%;
+    border-radius: 5px;
+    align-self: center;
+}
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+} 
