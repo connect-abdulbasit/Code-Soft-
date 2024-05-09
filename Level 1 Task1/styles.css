@@ -63,6 +63,11 @@ border-radius: 3px;
     background-color: transparent;
     transition: 0.3s;
 }
+.icon{
+    color: #fff;
+    font-size: 23px;
+    size: 23px;
+}
 .txt{
     position: absolute;
     top: 50%;
@@ -76,12 +81,13 @@ border-radius: 3px;
 .txt h1{
     font-size: 50px;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    color: white;
 }
 .txt a{
     font-size: 15px;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     color: rgb(255, 255, 255);
     background-color: indianred;
     border: 2px solid indianred;
@@ -93,4 +99,34 @@ border-radius: 3px;
     background-color: transparent;
     transition: 0.3s;
 
+}
+@media(max-width:800px) {
+    .register a{
+        font-size: 19px;
+        padding: 3px;        
+        } 
+        .options ul{
+            font-size: 18px;
+        }
+        .options ul li{
+            margin: 0 10px;
+        }  
+}
+@media(max-width:650px) {
+    /* .register a{
+        font-size: 19px;
+        padding: 3px;        
+        }  */
+        .options ul{
+            font-size: 15px;
+        }
+        .options ul li{
+            margin: 0 7px;
+        }  
+        .logo{
+            font-size: 25px;
+        }
+        .txt h1{
+            font-size: 40px;
+        }
 }
