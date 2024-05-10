@@ -67,6 +67,7 @@ border-radius: 3px;
     color: #fff;
     font-size: 23px;
     size: 23px;
+    display: none;
 }
 .txt{
     position: absolute;
@@ -113,10 +114,6 @@ border-radius: 3px;
         }  
 }
 @media(max-width:650px) {
-    /* .register a{
-        font-size: 19px;
-        padding: 3px;        
-        }  */
         .options ul{
             font-size: 15px;
         }
@@ -129,4 +126,42 @@ border-radius: 3px;
         .txt h1{
             font-size: 40px;
         }
+}
+  
+  @media screen and (max-width: 600px) {
+    .options {
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        padding: 20px 0;
+        box-sizing: border-box;
+        z-index: 10000;
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        top: 10;
+        right: 0;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .options.show {
+        display: block;
+        transition: 0.5s;
+    }
+
+    .options ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .options ul li {
+        margin: 10px 0;
+    }
 }
