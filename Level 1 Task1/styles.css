@@ -132,13 +132,14 @@ border-radius: 3px;
     .options {
         display: none;
         position: absolute;
-        top: 0%;
+        top: -100%;
         left: 0;
         width: 100%;
         background-color: black;
         padding: 20px 0;
         box-sizing: border-box;
-        z-index: 10000;
+        z-index: 100;
+        transition: 1s;
     }
 
     .icon {
@@ -148,11 +149,8 @@ border-radius: 3px;
         right: 0;
         color: #fff;
         font-size: 20px;
-    }
+        z-index: 200;
 
-    .options.show {
-        display: block;
-        transition: 0.5s;
     }
 
     .options ul {
@@ -163,5 +161,17 @@ border-radius: 3px;
 
     .options ul li {
         margin: 10px 0;
+    }
+}
+@media screen and (max-width:380px){
+    .txt h1{
+        font-size: 30px;
+    }
+    .txt span{
+        font-size: 15px;
+    }
+    .txt a{
+        font-size: 13px;
+        letter-spacing: 3px;
     }
 }
