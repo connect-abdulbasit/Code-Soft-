@@ -1,45 +1,32 @@
- *{
+*{
     scroll-behavior: smooth;
  }
  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: linear-gradient(rgb(0, 0, 0),rgba(41, 41, 41, 0));
 } 
 
 header {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-/* Add position: fixed to make the navigation bar stay fixed at the top */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
     text-align: center;
-    
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
 }
 
-/* Styling for anchor links */
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px; /* Add padding for better clickability */
-}
-
-/* Style the active link */
-header nav ul li a.active {
-    background-color: #555;
-}
-
-/* Smooth scrolling animation for anchor links */
-html {
-    scroll-behavior: smooth;
+    padding: 10px; 
 }
 
 .leftHeader{
