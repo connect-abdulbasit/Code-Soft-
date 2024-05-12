@@ -1,6 +1,6 @@
 const icon = document.querySelector(".icon");
 const nav = document.querySelector(".rightHeader");
-
+let w = window.innerWidth;
 icon.addEventListener("click", () => {
     if (nav.style.width === "0%") {
         nav.style.width = "200px";
