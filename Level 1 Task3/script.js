@@ -48,25 +48,36 @@ per.addEventListener("click",()=>{
     newValue=true;
 })
 out.addEventListener("click",()=>{
+    let result;
     if (!same) {      
         secondValue=parseFloat(output.innerHTML);
         same=true;
     }
     switch (operation) {
         case '+':
-            output.innerHTML=firstValue+secondValue;
+            result=firstValue+secondValue;
+            result.toFixed(9);
+            output.innerHTML=result;
             break;
         case '-':
-            output.innerHTML=firstValue-secondValue;
+            result=firstValue-secondValue;
+            result.toFixed(9);
+            output.innerHTML=result;
             break;
         case 'X':
-            output.innerHTML=firstValue*secondValue;
+            result=firstValue*secondValue;
+            result.toFixed(9);
+            output.innerHTML=result;
             break;
         case '/':
-            output.innerHTML=firstValue/secondValue;
+            result=firstValue/secondValue;
+            result.toFixed(9);
+            output.innerHTML=result;
             break;
         case '%':
-            output.innerHTML=firstValue/100;
+            result=firstValue/100;
+            result.toFixed(9);
+            output.innerHTML=result;
             break;
         default:
             break;

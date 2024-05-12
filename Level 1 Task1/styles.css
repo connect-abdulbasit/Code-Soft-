@@ -130,7 +130,6 @@ border-radius: 3px;
   
   @media screen and (max-width: 600px) {
     .options {
-        display: none;
         position: absolute;
         top: -100%;
         left: 0;
@@ -139,7 +138,7 @@ border-radius: 3px;
         padding: 20px 0;
         box-sizing: border-box;
         z-index: 100;
-        transition: 1s;
+        transition: 0.3s;
     }
 
     .icon {
